@@ -1,14 +1,17 @@
-const observer = new IntersectionObserver(entries => {
-
-    entries.forEach(entry => {
-
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
-
-    });
-
+new Typed("#typing",{
+strings:[
+"Senior Data Engineer",
+"AWS Data Platform Engineer",
+"PySpark Developer",
+"Databricks Engineer",
+"Cloud Analytics Specialist"
+],
+typeSpeed:60,
+backSpeed:30,
+loop:true
 });
 
-document.querySelectorAll(".card")
-.forEach(el => observer.observe(el));
+AOS.init({
+duration:1000,
+once:true
+});
