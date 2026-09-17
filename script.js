@@ -1,16 +1,14 @@
-document.querySelectorAll("a[href^='#']")
-.forEach(anchor => {
+const observer = new IntersectionObserver(entries => {
 
-anchor.addEventListener("click", function(e){
+    entries.forEach(entry => {
 
-e.preventDefault();
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
 
-document.querySelector(
-this.getAttribute("href")
-).scrollIntoView({
-behavior:"smooth"
-});
+    });
 
 });
 
-});
+document.querySelectorAll(".card")
+.forEach(el => observer.observe(el));
