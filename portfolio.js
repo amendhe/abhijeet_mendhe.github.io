@@ -1,9 +1,9 @@
 const portfolio = {
   summary: "I design scalable data platforms and production-grade pipelines across cloud, lakehouse and analytics ecosystems, with a growing focus on practical GenAI systems.",
   about: "I work at the intersection of platform engineering, analytics and automation. My approach is simple: understand the business constraint, design for operability, and build systems that teams can trust.",
-  email: "abhijeet@example.com",
+  email: "abhijeetmendhe7@gmail.com",
   github: "https://github.com/amendhe",
-  linkedin: "https://www.linkedin.com/in/abhijeetmendhe/",
+  linkedin: "https://www.linkedin.com/in/abhijeet-mendhe/",
   principles: [
     { title: "Design for reliability", text: "Clear contracts, observable pipelines and predictable recovery paths from day one." },
     { title: "Engineer for scale", text: "Distributed processing and cloud patterns selected around real workload behavior." },
