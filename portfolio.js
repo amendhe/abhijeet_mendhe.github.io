@@ -1,70 +1,28 @@
 const portfolio = {
-
-    name: "Abhijeet Mendhe",
-
-    title: "Senior Data Engineer",
-
-    summary:
-        "Experienced Data Engineer specializing in AWS, Databricks, Snowflake, PySpark, Hadoop, Airflow, Kubernetes and GenAI solutions.",
-
-    about:
-        "I design scalable cloud-native data platforms and analytics solutions. My focus is building reliable ETL pipelines, modern lakehouse architectures, automation frameworks and GenAI-enabled applications.",
-
-    email: "abhijeet@example.com",
-
-    github: "https://github.com/amendhe",
-
-    linkedin: "https://linkedin.com/in/abhijeetmendhe",
-
-    skills: [
-
-        {
-            category: "Cloud",
-            items: "AWS, Azure, GCP"
-        },
-
-        {
-            category: "Data Engineering",
-            items: "Python, PySpark, Hadoop, Hive"
-        },
-
-        {
-            category: "Warehouse",
-            items: "Snowflake, Redshift, Databricks"
-        },
-
-        {
-            category: "DevOps",
-            items: "Docker, Kubernetes, GitHub Actions"
-        },
-
-        {
-            category: "GenAI",
-            items: "RAG, LangChain, OpenAI"
-        }
-
-    ],
-
-    projects: [
-
-        {
-            title: "Enterprise RAG Platform",
-            description:
-                "Built enterprise knowledge search solution using vector search and LLMs."
-        },
-
-        {
-            title: "Databricks Migration Framework",
-            description:
-                "Accelerated migration of legacy ETL workloads to Databricks."
-        },
-
-        {
-            title: "Pipeline Automation Platform",
-            description:
-                "Automated data quality, deployment and monitoring workflows."
-        }
-
-    ]
-
+  summary: "I design scalable data platforms and production-grade pipelines across cloud, lakehouse and analytics ecosystems, with a growing focus on practical GenAI systems.",
+  about: "I work at the intersection of platform engineering, analytics and automation. My approach is simple: understand the business constraint, design for operability, and build systems that teams can trust.",
+  email: "abhijeet@example.com",
+  github: "https://github.com/amendhe",
+  linkedin: "https://www.linkedin.com/in/abhijeetmendhe/",
+  principles: [
+    { title: "Design for reliability", text: "Clear contracts, observable pipelines and predictable recovery paths from day one." },
+    { title: "Engineer for scale", text: "Distributed processing and cloud patterns selected around real workload behavior." },
+    { title: "Deliver measurable value", text: "Technical decisions connected to speed, quality, maintainability and user outcomes." }
+  ],
+  skills: [
+    { code: "DE", title: "Data Engineering", description: "Batch and distributed data pipelines built for reliability and maintainability.", items: ["Python", "PySpark", "Hadoop", "Airflow"] },
+    { code: "CL", title: "Cloud & Lakehouse", description: "Modern cloud data platforms and lakehouse implementations.", items: ["AWS", "Databricks", "Snowflake", "Azure"] },
+    { code: "PO", title: "Platform Operations", description: "Containerized, automated and observable engineering workflows.", items: ["Docker", "Kubernetes", "Linux", "GitHub Actions"] },
+    { code: "AI", title: "Applied GenAI", description: "Retrieval and LLM-enabled systems grounded in enterprise knowledge.", items: ["RAG", "Vector Search", "LLMs", "Automation"] }
+  ],
+  experience: [
+    { label: "Platform Engineering", title: "Scalable data foundations", text: "Designing ingestion, transformation and serving layers with clear ownership and operational controls." },
+    { label: "Modernization", title: "Cloud and lakehouse migration", text: "Moving legacy workloads toward modular architectures while protecting data quality and delivery continuity." },
+    { label: "Intelligent Automation", title: "GenAI-enabled workflows", text: "Applying retrieval and language models where they reduce friction and improve access to trusted information." }
+  ],
+  projects: [
+    { title: "Enterprise RAG Platform", description: "A knowledge retrieval architecture combining governed content, vector search and LLM-based response generation.", items: ["RAG", "Vector DB", "LLM"] },
+    { title: "Databricks Migration Framework", description: "A structured approach for translating and validating legacy data workloads on a modern lakehouse platform.", items: ["Databricks", "PySpark", "SQL"] },
+    { title: "Pipeline Automation Platform", description: "Reusable engineering patterns for deployment, data-quality validation, monitoring and operational handover.", items: ["Airflow", "Python", "DevOps"] }
+  ]
 };
