@@ -1,88 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Abhijeet Mendhe, Senior Data Engineer specializing in modern data engineering and Generative AI solutions.">
-    <title>Abhijeet Mendhe | Senior Data Engineer</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Abhijeet Mendhe, Senior Data Engineer specializing in cloud data platforms, analytics, automation and GenAI systems.">
+  <meta name="theme-color" content="#07111f">
+  <title>Abhijeet Mendhe | Senior Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="portfolio.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar" aria-label="Main navigation">
-            <a class="logo" href="#home" aria-label="Go to home section">AM</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Abhijeet Mendhe home">
+        <span class="brand-mark">AM</span>
+        <span class="brand-copy"><strong>Abhijeet Mendhe</strong><small>Data Engineering</small></span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="nav-cta" href="#contact">Let's connect</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <p class="hero-label">Hello, I am</p>
-                <h1 id="name">Abhijeet Mendhe</h1>
-                <h2 id="title">Senior Data Engineer</h2>
-                <p id="summary">
-                    Building scalable data platforms, cloud-native pipelines and Generative AI solutions.
-                </p>
+  <main id="main">
+    <section class="hero container section">
+      <div class="hero-copy reveal">
+        <div class="availability"><span></span> Open to meaningful engineering challenges</div>
+        <p class="eyebrow">Senior Data Engineer · Cloud · Analytics · GenAI</p>
+        <h1>Engineering data systems that are <span>reliable by design.</span></h1>
+        <p class="hero-summary" id="summary"></p>
+        <div class="hero-actions">
+          <a class="button button-primary" id="linkedinBtn" href="#" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" id="githubBtn" href="#" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="tool-strip" aria-label="Primary technologies">
+          <span>Python</span><span>PySpark</span><span>AWS</span><span>Databricks</span><span>Snowflake</span><span>GenAI</span>
+        </div>
+      </div>
 
-                <div class="hero-buttons">
-                    <a id="githubBtn" class="btn primary" href="https://github.com/amendhe" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a id="linkedinBtn" class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </div>
-            </div>
-        </section>
+      <div class="hero-panel reveal" aria-label="Engineering profile summary">
+        <div class="panel-top"><span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span><span class="panel-title">profile.py</span></div>
+        <pre><code><span class="code-purple">class</span> <span class="code-blue">DataEngineer</span>:
+    focus = [
+        <span class="code-green">"scalable platforms"</span>,
+        <span class="code-green">"reliable pipelines"</span>,
+        <span class="code-green">"GenAI systems"</span>
+    ]
 
-        <section id="about" class="section">
-            <h2 class="section-title">About</h2>
-            <div class="card">
-                <p id="aboutText">
-                    I design scalable cloud-native data platforms, ETL pipelines, lakehouse architectures, automation frameworks and Generative AI applications.
-                </p>
-            </div>
-        </section>
+    <span class="code-purple">def</span> <span class="code-blue">approach</span>(self):
+        <span class="code-purple">return</span> <span class="code-green">"clarity → scale → impact"</span></code></pre>
+        <div class="panel-status"><span></span> System ready</div>
+      </div>
+    </section>
 
-        <section id="skills" class="section">
-            <h2 class="section-title">Skills</h2>
-            <div id="skillsContainer" class="grid">
-                <noscript>Enable JavaScript to display the skills.</noscript>
-            </div>
-        </section>
+    <section class="section container" id="about">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 · About</p><h2>Architecture-first thinking.<br>Business-focused delivery.</h2></div><p id="aboutText"></p></div>
+      <div class="principles-grid" id="principlesContainer"></div>
+    </section>
 
-        <section id="projects" class="section">
-            <h2 class="section-title">Projects</h2>
-            <div id="projectsContainer" class="grid">
-                <noscript>Enable JavaScript to display the projects.</noscript>
-            </div>
-        </section>
+    <section class="section section-tinted" id="expertise">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow">02 · Expertise</p><h2>From ingestion to intelligence.</h2></div><p>A focused toolkit for building maintainable, secure and observable data products.</p></div>
+        <div class="expertise-grid" id="skillsContainer"></div>
+      </div>
+    </section>
 
-        <section id="contact" class="section">
-            <h2 class="section-title">Contact</h2>
-            <div class="card contact-card">
-                <p>
-                    Email:
-                    <a id="emailLink" href="mailto:abhijeet@example.com">
-                        <span id="email">abhijeet@example.com</span>
-                    </a>
-                </p>
-            </div>
-        </section>
-    </main>
+    <section class="section container" id="experience">
+      <div class="section-heading reveal"><div><p class="eyebrow">03 · Experience</p><h2>Work that moves systems forward.</h2></div><p>Selected areas of ownership across engineering, modernization and intelligent automation.</p></div>
+      <div class="experience-list" id="experienceContainer"></div>
+    </section>
 
-    <footer>
-        <p>&copy; <span id="currentYear">2026</span> Abhijeet Mendhe. All rights reserved.</p>
-    </footer>
+    <section class="section container" id="projects">
+      <div class="section-heading reveal"><div><p class="eyebrow">04 · Selected work</p><h2>Systems, not demo projects.</h2></div><p>Representative solutions across modern data engineering and applied GenAI.</p></div>
+      <div class="projects-grid" id="projectsContainer"></div>
+    </section>
 
-    <script src="./portfolio.js"></script>
-    <script src="./script.js"></script>
+    <section class="section container" id="contact">
+      <div class="contact-card reveal">
+        <div><p class="eyebrow">05 · Contact</p><h2>Have a hard data problem?</h2><p>Let’s discuss scalable platforms, cloud modernization, analytics automation or applied GenAI.</p></div>
+        <div class="contact-actions"><a class="button button-light" id="emailBtn" href="#">Send an email <span aria-hidden="true">↗</span></a><button class="copy-button" id="copyEmail" type="button">Copy email</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="currentYear"></span> Abhijeet Mendhe</p>
+    <p>Designed for clarity. Engineered for speed.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
 </body>
 </html>
