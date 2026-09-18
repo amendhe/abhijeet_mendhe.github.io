@@ -1,5 +1,5 @@
 const portfolio = {
-  summary: "I design scalable data platforms and production-grade pipelines across cloud, lakehouse and analytics ecosystems, with a growing focus on practical GenAI systems.",
+  summary: "I design scalable data platforms and production-grade pipelines across cloud, lakehouse and analytics ecosystems.",
   about: "I work at the intersection of platform engineering, analytics and automation. My approach is simple: understand the business constraint, design for operability, and build systems that teams can trust.",
   email: "abhijeetmendhe7@gmail.com",
   github: "https://github.com/amendhe",
@@ -10,19 +10,16 @@ const portfolio = {
     { title: "Deliver measurable value", text: "Technical decisions connected to speed, quality, maintainability and user outcomes." }
   ],
   skills: [
-    { code: "DE", title: "Data Engineering", description: "Batch and distributed data pipelines built for reliability and maintainability.", items: ["Python", "PySpark", "Hadoop", "Airflow"] },
-    { code: "CL", title: "Cloud & Lakehouse", description: "Modern cloud data platforms and lakehouse implementations.", items: ["AWS", "Databricks", "Snowflake", "Azure"] },
-    { code: "PO", title: "Platform Operations", description: "Containerized, automated and observable engineering workflows.", items: ["Docker", "Kubernetes", "Linux", "GitHub Actions"] },
-    { code: "AI", title: "Applied GenAI", description: "Retrieval and LLM-enabled systems grounded in enterprise knowledge.", items: ["RAG", "Vector Search", "LLMs", "Automation"] }
+    { code: "DE", title: "Data Engineering", description: "Batch and distributed data pipelines built for reliability and maintainability.", items: ["Python", "PySpark", "Hadoop", "Airflow", "MSSqlServer"] },
+    { code: "CL", title: "Cloud & Lakehouse", description: "Modern cloud data platforms and lakehouse implementations.", items: ["AWS", "Databricks", "Snowflake", "GCP"] },
+    { code: "PO", title: "Platform Operations", description: "Containerized, automated and observable engineering workflows.", items: ["Docker", "Kubernetes","Autosys", "Linux", "GitHub Actions"] }
   ],
   experience: [
     { label: "Platform Engineering", title: "Scalable data foundations", text: "Designing ingestion, transformation and serving layers with clear ownership and operational controls." },
-    { label: "Modernization", title: "Cloud and lakehouse migration", text: "Moving legacy workloads toward modular architectures while protecting data quality and delivery continuity." },
-    { label: "Intelligent Automation", title: "GenAI-enabled workflows", text: "Applying retrieval and language models where they reduce friction and improve access to trusted information." }
+    { label: "Modernization", title: "Cloud and lakehouse migration", text: "Moving legacy workloads toward modular architectures while protecting data quality and delivery continuity." }
   ],
   projects: [
-    { title: "Enterprise RAG Platform", description: "A knowledge retrieval architecture combining governed content, vector search and LLM-based response generation.", items: ["RAG", "Vector DB", "LLM"] },
-    { title: "Databricks Migration Framework", description: "A structured approach for translating and validating legacy data workloads on a modern lakehouse platform.", items: ["Databricks", "PySpark", "SQL"] },
+    { title: "Migration Framework", description: "A structured approach for translating and validating legacy data workloads on a modern lakehouse platform.", items: ["Databricks", "PySpark", "SQL"] },
     { title: "Pipeline Automation Platform", description: "Reusable engineering patterns for deployment, data-quality validation, monitoring and operational handover.", items: ["Airflow", "Python", "DevOps"] }
   ]
 };
